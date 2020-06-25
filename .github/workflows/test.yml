@@ -21,7 +21,7 @@ jobs:
          run: echo approved pr
   merger:
     
-    if: github.actor == 'zachfdev'
+    if: github.actor == 'zachydev'
     name: waiting to merger pr
     runs-on: ubuntu-latest
     steps:
