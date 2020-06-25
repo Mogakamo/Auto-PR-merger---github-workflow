@@ -21,6 +21,7 @@ jobs:
          run: echo approved pr
          
        - name: Pull Request Merginator
+         run: echo merging pr
        - uses: managedkaos/merge-pull-request@v1.2
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
