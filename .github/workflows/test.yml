@@ -12,9 +12,7 @@ jobs:
      name: Approve and Auto merge
      runs-on: ubuntu-latest
      steps:
-       - uses: actions/checkout@v2
-       - name: Running test
-         run: echo running test
+      
        - uses: hmarr/auto-approve-action@v2.0.0
          if: github.actor == 'zachydev' || github.actor == 'dependent-preview[bot]'
          with:
