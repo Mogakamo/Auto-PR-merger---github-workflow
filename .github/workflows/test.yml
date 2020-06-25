@@ -15,6 +15,6 @@ jobs:
        - uses: hmarr/auto-approve-action@v2.0.0
          if: github.actor == 'zachydev' || github.actor == 'dependent-preview[bot]'
          with:
-           github-token: "${{ secret.GITHUB_TOKEN}}" 
+           github-token: "${{ secrets.GITHUB_TOKEN}}" 
        - name: Finishing up and merging PR
          run: echo merged PR!!
